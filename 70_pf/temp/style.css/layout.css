@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
+
+/* layout(배치) */
+/* 박스모델 속성, display */
+
+
+:root {
+    scroll-behavior: :smooth;
+}
+
+/* navigation */
+nav {
+    /* height: 100px;  */
+    line-height: 100px;
+}
+
+nav section {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center;
+    height: 100px; */
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 12px 4px;
+    background: #999;
+}
+
+/* header */
+header {
+    background: url(../assets/bg-light.png) no-repeat 50% 50%/cover fixed;
+    line-height: 200px;
+}
+
+
+/* main */
+main {
+    padding: bottom 200px;
+    
+}
+
+section {
+    width: 940px;
+    margin: auto;
+}
+
+h2 {
+    margin: 56px 0;
+}
+
+.home-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.home-description {
+    width: 790px;
+}
+
+h3 span {
+    font-weight: 400;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+
+.home-icon {
+    width: 100px;
+    height: 100px;
+    background:yellow;
+    border-radius: 8px;
+}

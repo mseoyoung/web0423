@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2');
+}
+
+
+
+body {
+    margin: 0;
+    background: #fff;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 700px;
+}
+
+/* 전체 크기 */
+.box {
+    width: 1920px;
+    height: 796px;
+    background-color: #FFC20D;
+}
+
+
+.box p {
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/* 매장찾기 */
+.box>.box2 {
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    margin: 0 0 0 6px;
+    padding:6px 6px 6px 6px;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+}
+
+.box2>.container {
+    display: flex;
+    width: 602px;
+    height: 237px;
+    background-color: #fff;
+  
+   /*  justify-content: center;
+    align-items: center;
+    text-align: center; */
+}
+
+.container>#choose img{
+    position: absolute;
+    width: 140px;
+    height:108px;
+    /* right:calc(50%-101px); */
+    justify-content: left;
+}

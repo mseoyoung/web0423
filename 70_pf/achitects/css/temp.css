@@ -1,0 +1,7 @@
+@charset "utf-8";
+body * {outline: 1px solid green;}
+/* bg-color */
+header{background-color: #ccc;}
+.s1{background-color: #777;}
+.s2 li{background-color: #ccc;}
+h3{background-color: #777;}

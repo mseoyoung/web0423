@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(typo.css);
+
+/* 공통 */
+/* 뷰 포트(viewport): 창 기준
+    1. vw
+    2. vh
+    3. vmin
+    4. vmax
+*/
+section {
+    height: 100vh;
+    background: url(../assets/1.png) no-repeat -299px 0/cover;
+
+}
+
+.ibx {
+    display: flex;
+    align-items: center;
+    width: 1120px;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+/* 섹션4 */
+#s4 .cont {
+ 
+    width: 560px;
+}
+
+#s4 h3 {
+    position: relative;
+    margin: 24px 0 48px 0;
+}
+#s4 h3::after{
+    content: "";
+    z-index: -4;
+    position: absolute; left: 0;top: 100px;
+    width:360px ; height: 40px;
+    background: #5E2BB8;
+    
+}
+#s4 p:last-of-type {
+    margin: 24px 0;
+}
+
+#s4 .link a {
+    display: inline-block;
+    padding: 16px 24px;
+    background-color: #5E2BB8;
+    transition: .1s;
+}
+/* transform
+    1. scale (1,1), scalex(1),  scaleY(1), 
+    2. rotate (0deg)
+    3. translate(0px, 0px)
+    4. skew (0deg, 0deg)
+*/
+
+
+#s4 .link a:hover{
+    transform: translateY(-4px);
+    background-color: #a083d3;
+
+}
+#s4 .link a:first-child{
+    margin-right: 20px;
+}

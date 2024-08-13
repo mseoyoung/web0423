@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>서브웨이</title>
+        <style>
+            /* 초기화 화면 */
+            body {
+                margin: 0;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                vertical-align: top;
+            }
+            [alt*="p"]{display: none;}
+
+            @media (min-width:768px) {
+                [alt="phone"]{display: none;}
+                [alt*="ta"]{display: block;}
+            }
+            @media (min-width:992px) {
+                [alt*="ta"]{display: none;}
+                [alt*="d"]{display: block;}
+            }
+        </style>
+    </head>
+    <body>
+     
+
+        <img src="../sub/login/desktop_로그인.png" alt="desktop Pc">
+        <img src="../sub/login/tablet_로그인.png" alt="tablet Pc">
+        <img src="../sub/login/phone_로그인.png" alt="Phone">
+    </body>
+</html>
