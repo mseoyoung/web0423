@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2');
+
+}
+
+body {
+    font-family: "Noto Sans KR" sans-serif;
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "NanumSquareNeo", sans-serif;
+}
+
+h1,
+h3 {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+a {
+    color: #111;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Vallery-festival_문서영.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+    ul {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+/* 슬라이드*/
+
+    .slide {
+
+        width: 1920px;
+        height: 635px;
+        overflow: hidden;
+
+    }
+
+    .slide ul {
+        position: relative;
+        display: flex;
+        width: 400%;
+        animation: slide 12s infinite;
+    }
+    @keyframes slide {
+        0% {
+            left: 0%;
+        }
+
+        10% {
+            left: -100%;
+        }
+
+        33% {
+            left: -100%;
+        }
+
+        43% {
+            left: -200%;
+        }
+
+        66% {
+            left: -200%;
+        }
+
+        76% {
+            left: -300%;
+        }
+
+        99.99% {
+            left: -300%;
+        }
+
+        100% {
+            left: 0%;
+        }
+    }
+    @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 300px;
+    }
+}
+
+* {
+    box-sizing: border-box
+}
+
+div {
+    position: relative;
+    left: 0;
+    width: 1920px;
+    height: 200px;
+    background: yellow;
+    margin: 5px;
+    animation: move 3s infinite;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+div:nth-of-type(1) {
+    animation-direction: normal;
+}
+div div{position: relative;
+    left: 0;
+    width: 1920px;
+    height: 100px;
+    background: yellow;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;}
+
+body ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-size: 12px;
+    "Noto Sans kR",
+    sans-serif;
+}
+
+.main li {
+    display: block;
+    text-align:center;
+    font-size: 16px;
+}
+
+.main>li:hover>a {
+    color: #fff;
+}
+
+.sub li a {
+    display: inline;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.sub li:hover a {
+    color: #fff;
+}
+
+header {
+    position: relative;
+    width: 1920px;
+    height: 635px;
+    margin-top: auto;
+
+}
+
+.gnb {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    z-index: 2;
+    background: #111;
+}
+
+.main {
+    display: flex;
+    transition: .3s;
+}
+
+.main>li {
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.main>li:hover {
+    background: #333;
+}
+
+.main::before {
+    z-index: -1;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    content: "";
+    width: 1200px;
+    visibility: hidden;
+    opacity: 0;
+    height: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+
+.main:hover::before {
+    visibility: visible;
+    opacity: 1;
+    height: 200px;
+}
+
+.sub {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 10px 0 20px 0;
+    transition: .3s;
+}
+
+.main:hover .sub {
+    visibility: visible;
+    opacity: 1;
+    height: 120px;
+}
+
+.sub li a {
+    padding: 4px 16px;
+}
+
+.sub li:hover a {
+    background: #111;
+}
+
+
+
+</style>
+<body>
+
+    <div>Vallery-festival</div>
+
+    <div class="slide">
+        <ul>
+            <li><img src="../90_test/디자인구성요소제작/images/1.jpg" alt="슬라이드이미지1"></li>
+            <li><img src="../90_test/디자인구성요소제작/images/2.jpg" alt="슬라이드이미지2"></li>
+            <li><img src="../90_test/디자인구성요소제작/images/3.jpg" alt="슬라이드이미지3"></li>
+            <li><img src="../90_test/디자인구성요소제작/images/1.jpg" alt="슬라이드이미지1"></li>
+        </ul>
+    </div>
+    <header>
+        <nav class="gnb">
+            <ul class="main">
+                <li>
+                    <a href="#">축제소개</a>
+                    <ul class="sub">
+                        <li><a href="#">festival 소개</a></li>
+                        <li><a href="#">행사장 안내</a></li>
+                        <li><a href="#">조직 위원회</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">예약안내</a>
+                    <ul class="sub">
+                        <li><a href="#">예약하기</a></li>
+                        <li><a href="#">예약확인/취소</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아티스트</a>
+                    <ul class="sub">
+                        <li><a href="#">고릴라즈</a></li>
+                        <li><a href="#">메이저 레이저</a></li>
+                        <li><a href="#">아우스게인</a></li>
+                        <li><a href="#">타임로드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니케이션</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">사진갤러리</a></li>
+                        <li><a href="#">영상갤러리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>  
+    <div>copyright 2024. Vallery Festival</div>
+</body>
+</html>
