@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            width: 300px;
+            height: 300px;
+            background: #ccff00;
+            margin-left: 30px;
+            margin-top: 30px;
+            /* offsetleft 또는 offsetop이 적용되지 않는다. */
+            transform: translateX(100px) translateY(100px);
+            /* 똑같은 속성은 밑에것만 적용된다. */
+            transition: .3s;
+           
+        }
+  
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            /* 요소 찾기 */
+            const div = document.querySelector('div');
+
+            /* 버튼을 클릭하면 div의 위치가 버튼 가까이에 오게 */
+            buttonEle.onclick =()=>{
+            /* div.classList.add('move'); */
+       
+            console.log('top:', div.offsetTop);
+            console.log('left: ' + div.offsetLeft);
+
+            };
+          
+        });
+ 
+
+    </script>
+</head>
+
+<body>
+  
+    <div>박스</div>
+
+</body>
+
+</html>
