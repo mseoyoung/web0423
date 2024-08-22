@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            window.addEventListener('DOMContentLoaded',()=>{
+
+
+
+                /* 객체 :첫 글자가 대문자
+                Object
+
+                객체{}
+                const 변수 ={
+                    속성:값,
+                    속성:값,
+                    속성:값,
+                    };
+                    함수 function(){}
+                    베열:[]
+                    */
+                   // 객체 생성
+                   /* 속성은 "" 을 묶어 사용
+                   숫자형 문자= model:"500"
+
+
+                   */
+
+
+                      const person1 = {
+
+                          "이름":"John",
+                          "성":"Doe",
+                          "나이": 50
+                        };
+
+                        //요소 찾기
+                        const div =document.querySelector('div');
+
+                        //출력
+                        /*div.innerText=car.type;
+                        div.innerText=car.model;
+                        div.innerText=car.color; */
+
+
+
+
+                        div.innerHTML +="이름은"
+                        +person.firstname
+                        +person.lastname;
+                        +'나이는'
+                        +person.age
+                        +"너 남자니"
+                        +person['남자니']
+                        +(person['남자니?']? '예':'아니요')
+                        +'<br> 이름을 다시 한 번 말해주세요'
+                        +person.성과이름()
+                        +'입니다. 차를 가지고 있군요, 어떤 차인가요?'
+                        +person.myCar.type
+                        +'이구요.모델명은?'
+                        +person.myCar.model
+                        +'이구요.<br>색깔은'
+                        +person.myCar.color
+                        
+
+
+                        /* 
+                        if(조건){
+                        참}else{
+                        거짓}
+
+                         */
+
+
+
+                        console.log(['person.firstname']);
+                        console.log(['person.lastname']);
+                        console.log(['person.age']);
+
+
+                        console.log(person1['firstname']);
+                        console.log(person1['lastname']);
+                        console.log(person1['age']);
+                        console.log(person1['남자니']);
+
+                        console.log('객체.객체.속성');
+                        console.log(person.myCar.type);
+                        console.log(person.myCar.type);
+                        console.log(person.myCar.type);
+
+
+
+
+                        /* 객체 접근 방법
+                        객체, 속성
+                        객체['속성']=
+                        person1.firstName;
+                        person1["firstName"];
+
+                        출력
+                        div.innerText='값'
+                        div.innerHtml
+                        div.textcontent
+                        */
+
+                       //객체 사용방법
+                       person1.firstName;
+                       person1["firstName"];
+
+
+                        //객체 
+
+
+
+
+                       // new 키워드 추가
+                       const person3 = new Object();
+
+
+                       // 속성 변경
+                       person2.firstName = "John";
+                       person2.lastName = "Doe";
+                       person2.age = 50;
+                       person2.eyeColor = "blue";
+
+                       const person = {
+                           "이름": "John",
+                           "성"  : "Doe",
+                           "나이": 50,
+                           "남자니?": true,
+                           "성과 이름":function(){
+
+                            return person.성 +""+person.이름
+                            return this.firstName +""+this.이름
+                           }
+                        };
+
+                        /* mycar{
+                    type:"fiat",
+                      model:"500",
+                      color:"white",
+                        } */
+
+                        fullname();
+                        document.getElementById('아이디명');
+
+
+
+                    });
+        </script>
+    </head>
+    <body>
+        <h1>객체</h1>
+        <div>출력</div>
+    </body>
+</html>

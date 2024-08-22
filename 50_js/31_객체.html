@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /* 객체 
+    window
+    Dom
+    Date 
+    math
+    spring
+
+    객쳬{}
+    함수 function
+    배열 []
+    */
+// 객체 생성 
+   const car = {
+
+    type:"fiat",
+    model:"500",
+    color:"white"};
+
+   const person1 = {
+
+    firstName:"John",
+    lastName:"Doe",
+    age: 50, 
+    };
+
+    //객체 사용방법
+    person1.firstName;
+    person1["firstName"];
+    person1.lastName;
+    person1["lastName"];
+
+
+    // 속성 추가
+const person2 ={};
+
+person2.firstName = "John";
+person2.lastName = "Doe";
+person2.age = 50;
+person2.eyeColor = "blue";
+
+
+// new 키워드 추가
+const person3 = new Object();
+
+
+// 속성 추가
+person3.firstName = "John";
+person3.lastName = "Doe";
+person3.age = 50;
+person3.eyeColor = "blue";
+
+const person2 = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  "남자니?": true,
+  fullName : function() {
+    //return person2.firstName + " " + person2.lastName;
+    //this는 person2를 참조한다. -> this는 person2 이다.
+    //객체 내부의 this는 객체 자신을 가리킨다.
+    //함수 값을 갖는 속성은 메소드이다.
+    return this.firstName + " " + this.lastName;
+  },
+  "소유하고 있는 것":{
+    car:"2대",
+    home:"5채",
+    
+  }
+};
+
+fullname();
+document.getElementById('아이디명');
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

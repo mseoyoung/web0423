@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제어문</h1>
+    <h2>조건문</h2>
+    <script>
+        //if(조건식){실행코드;}
+        //조건식의 결과가 true이면 실행문이 실행된다.
+       
+       
+       const d = new Date();
+
+       let ss= d.getSeconds();
+     
+        if(ss<10){
+            ss ="0"+ ss;
+        }
+        document.write(`${ss}<br>`);
+
+
+    //if(조건식){실행문1:}else{실행문2;}, 조건식이 true이면 실행문1을 실행, 조건식이 false 이면 실행문2를 실행한다.
+
+    if(ss<10){ss="0"+ss;}else{ss=ss;}
+    document.write(`${ss}<br>`);
+    
+    // 요일: 0(일요일)~6(토요일)
+    let ss3= new Date("2024-8-15").getDay();
+
+    if(ss3===0){
+        ss3 = "일요일";
+    }
+    else if(ss3===1){
+        ss3 = "월요일";
+    }
+    else if(ss3===2){
+        ss3 = "화요일";
+    }
+    else if(ss3===3){
+        ss3 = "수요일";
+    }
+    else if(ss3===4){
+        ss3 = "목요일";
+    }
+    else if(ss3===5){
+        ss3 = "금요일";
+    }
+    else {
+        ss3 = "토요일";
+    }
+ 
+    document.write(`${ss3}<br>`);
+    </script>
+</body>
+</html>

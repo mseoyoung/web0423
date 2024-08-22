@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{width: 300px;}
+    </style>
+
+</head>
+<body>
+    <h1>제어문</h1>
+    <h2>반복문</h2>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script>
+        //요소찾기
+        const li = document.querySelectorAll('li');
+        console.log(li);
+        //요소[숫자]
+        //요소.item(숫자)
+        
+        //for 형식: for(초기값;조건식;증감식){
+        //            }
+
+        // 1을 화면에 10번 출력하기
+        //i ++ 는 1를 1씩 증가시킨다.: i  = i+ i/ i + = 1
+        //i--는 i를 1씩 감소시킨다.
+        //  for(let i = 0; i<10; i++) ->0~9
+        //1,2,~10까지
+        for(let i = 0; i<10; i++){
+            li[i].innerHTML = `<img src="assets/pic_${i+1}.jpg" alt="이미지${i+1}">`;
+          
+          
+        }
+       
+        for(let i=1; i<=100; i++) {
+            document.write(i+'<br>');
+        }
+     
+       
+    </script>
+</body>
+</html>

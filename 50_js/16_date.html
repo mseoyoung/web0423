@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>날짜와 시간</h1>
+    <script>
+        //날짜와 시간 표시 객체
+        //if를 공부하는 예시: 날짜, 시간(디지털 시계 제작)
+        //Fri Jul 12 2024 12:27:46 GMT+0900 (한국 표준시)
+        //그리니치 평균시(~平均時, Greenwich Mean Time, GMT) 또는 그리니치 표준시는 런던을 기점으로 하고, 웰링턴에 종점으로 설정되는 협정 세계시의 기준시간대이다.
+        //영국 런던 시간: 오전 4시 31분/ 우리나라 :12시 31분 (9시간 차이)
+        
+        //생성자 함수
+        //d는 날짜(시간) 인스턴스 객체이다.
+        const d = new Date();
+        // +연산자는 숫자는 더하기, 문자는 연결한다.
+        //1+2 ->3
+        //"일" + 2 -> 일2
+        //"일" +"이" ->일이
+        document.write(d + '<br>');
+
+         const yy = d.getFullYear();
+         //월:0~11 ->+1
+         const mm = d. getMonth()+1;
+         //일:1~31
+         const dd = d. getDate();
+         //시:0~23
+         let we = d. getDay();
+        
+         const hh = d. getHours();
+         //분:0~59
+         const mi = d. getMinutes();
+         //초:0~59
+         const ss = d. getSeconds();
+
+       
+       
+         document.write("<hr>"+yy+"년"+mm+"월"+dd+"일<br>"+hh+":"+mi+":"+ss);
+
+         document.write(`<hr>${yy}년${mm}월${dd}일${we}<br>${hh}:${mi}:${ss}`);
+       
+    </script>
+</body>
+</html>

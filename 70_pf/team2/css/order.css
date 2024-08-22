@@ -41,7 +41,8 @@ h1 {
 
 
 /* 매장찾기 */
-.box>.box2 {
+
+#sec1{
     width: 608px;
     height: 249px;
     background-color: #009132;
@@ -50,6 +51,23 @@ h1 {
     top: 0;
     left: 0;
     transform: translate(50%, 50%);
+}
+
+
+
+
+/* 전화상담문의 */
+#sec2{
+
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    margin: 0 0 0 0px;
+    padding: 6px 6px 6px 6px;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 50%);
+
 }
 
 .box2>.container {

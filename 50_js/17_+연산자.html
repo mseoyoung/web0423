@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>연산자</h1>
+    <h2>산술 연산자</h2>
+    <script>
+        const a = 10, b = 2;
+
+        document.write("문자열<br>");
+        //더하기
+        //숫자 +숫자 -> 숫자
+        document.write("5 + 2= "+(5+2) +"<br>" );
+        //문자 + 숫자 -> 문자
+        //문자 + 문자 -> 문자
+        //템플릿 리터럴(백틱:backticks '')
+        //중가로 사이 연산식
+        document.write("오 + 2=오" + 2 +"<br>");
+        //백틱은: 물결표(~,`)
+        //템플릿 리터럴(백턱:backticks '')
+        //1. 백틱 안에 내용은 모두 문자열로 취급한다./2. HTML 태그 인식한다. /3. 문자열 보간: $(표현식 또는 변수)
+        document.write(`오 + 2 = ${"오" +b}<br>`);
+        //NAN(Not a number):숫자가 아니다
+        document.write(`${a}- ${b}=${a - b }<br>`);
+        document.write(`5 * 2=${a * b} <br>`);
+        document.write(`5 / 2=${a / b} <br>`);
+        //%는 나머지
+        document.write(`5 % 2=${a % b}`);
+
+
+    </script>
+</body>
+</html>

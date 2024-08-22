@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bx슬라이더 라이브러리 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+    <style>
+      
+
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            /* %는 부모
+            em: 부모  
+            100vw:창 기준 전체 100
+            vh,vw,vmin,vmax-viewport() */
+            height: 100vh;
+            min-height: auto;
+            object-fit: cover;
+        }
+
+        #slideWrap {
+            position: relative;
+            /* height: 450px; */
+            margin: 0 auto;
+         
+        }
+
+        .bx-wrapper {
+            height: 100%;
+            box-shadow: none;
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .bx-viewport {
+            height: 100%;
+        }
+
+        /* 인디케이터(페이저) */
+        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+            /* 위치 */
+            width:auto;
+            left: calc(50% - 60px);
+            transform: translateX(-50%);
+            bottom: 38%;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a:focus,
+        .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .bx-wrapper .bx-pager.bx-default-pager a {
+           width: 30px;
+           height: 30px;
+           background: url(../assets/lotte/mainRoll_indi.png);
+           border: none;
+           margin: 0 12px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+       
+            /*a.active는 a(중앙 3개 동그라미)중에서 선택된 active */
+           
+            background:url(../assets/lotte/mainRoll_indi_on.png);
+        }
+        /* 실행 일시 정지 */
+        .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+                height: 30px;
+                bottom: 35%;
+                right: calc(50% - 60px);
+                width: 35px
+            }
+
+
+            /* 실행버튼 */
+
+
+
+
+            
+
+            /*일시정지 버튼 */
+            .bx-wrapper .bx-controls-auto .bx-stop:focus,
+            .bx-wrapper .bx-controls-auto .bx-stop:hover,
+            .bx-wrapper .bx-controls-auto .bx-stop {
+                display: block;
+                text-indent: -9999px;
+                width: 9px;
+                height: 11px;
+                outline: 0;
+                background: url(../assets/lotte/btn_pause.png) 0px 0px no-repeat;
+                margin: 0 3px;}
+
+        /* 이전/다음 버튼 */
+        .bx-wrapper .bx-controls-direction a {
+            /* 크기 */
+           display: block;
+            width: 40px;
+            height: 79px;
+            transform: translateY(-50%);
+            /* 버튼의 수직 중앙 배치(기본값 -16px) */
+            margin-top: 0px;
+            background: no-repeat 0 0;
+           
+        }
+        /* 이전 */
+        .bx-wrapper .bx-controls-direction a.bx-prev {
+            left: 0px;
+            background-image: url(../assets/lotte/white_rollBtn_prev.png);
+        }
+
+        /* 다음 */
+        .bx-wrapper .bx-controls-direction a.bx-next {
+            right: 0px;
+            background-image: url(../assets/lotte/white_rollBtn_next.png);
+        }
+    
+
+        /* 다음 버튼 호버시 사라지는 현상 초기화 */
+        .bx-wrapper .bx-next:focus,
+        .bx-wrapper .bx-next:hover {
+            background-position: 0 0;
+        }
+
+        /* 텍스트 모션 */
+        #slideWrap p{
+            z-index: 9999;
+            position: absolute;
+            left: 50%;
+            top:43%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+     
+        }
+       
+        #slideWrap p.active{
+            top:38%;
+            opacity: 1;
+            transition: .5s;
+        }
+     /*     translate()
+            max(숫자, 숫자)큰값
+            min(숫자, 숫자)작은값
+     
+     
+     */
+        @media (min-width:992px){
+
+            #slidewrap img(
+                {min-width:850px}
+            )
+
+            .bx-wrapper .bx-controls-direction a {
+            /* 크기 */
+           display: block;}
+        }
+
+
+
+
+    </style>
+    <!-- 제이쿼리 라이브러리 파일이 위쪽으로 지정 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bx슬라이더 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+    <script>
+        $(() => {
+           
+            $('.slider').bxSlider({
+                auto: true,
+                stopAutoOnClick: true,
+                autoControls: true
+
+                //이벤트: 슬라이드가 바뀌면,//
+               
+                //addClass
+                //슬라이드 전 메인타이틀이 아래에 있다가//
+                //슬라이드 후 메인타이틀이 위로 나타난다.//
+            });
+        }); // 로드 이벤트
+    </script>
+</head>
+
+<body>
+    <div id="slideWrap">
+        <div class="slider">
+            <div>
+                <img src="../assets/lotte/202010280624033660.jpg" alt="슬라이드이미지1">
+                <p>언제 어디서나, 모든 순간<br>고객의 곁에서 함께합니다.</p>
+            </div>
+            <div>
+                <img src="../assets/lotte/202010280628151570.jpg" alt="슬라이드이미지2">
+                <p>맑고 깨끗한 제품으로,<br>건강한 생태계 환경을 만듭니다.</p>
+            </div>
+            <div>
+                <img src="../assets/lotte/202010280638337510.jpg" alt="슬라이드이미지3">
+                <p>끊임없는 혁신과 변화를 통해,<br>더 큰 미래를 향해 나아갑니다.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

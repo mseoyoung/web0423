@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      
+        <script>
+            window.addEventListener('DOMContentLoaded',()=>{
+
+
+
+
+                      const person1 = {
+
+                          "이름":"John",
+                          "성":"Doe",
+                          "나이": 50
+                        };
+
+                        const div =document.querySelector('div');
+
+
+                        div.innerHTML =`이름은
+                    
+                        ${person.lastname}
+                        <br>나이는
+                        ${person.age}
+                        <br>너 남자니
+                        ${person['남자니']}
+                        ${(person['남자니?']? 예:'아니요')}
+                        <br> 이름을 다시 한 번 말해주세요
+                        ${person.성과이름()}
+                        <br>입니다. 차를 가지고 있군요, 어떤 차인가요?
+                        ${person.myCar.type}
+                        <br>이구요.모델명은?
+                        ${person.myCar.model}
+                        <br>이구요.색깔은
+                        ${person.myCar.color}
+                        <br>입니다`
+
+
+
+                        console.log(['person.firstname']);
+                        console.log(['person.lastname']);
+                        console.log(['person.age']);
+
+
+                        console.log(person1['firstname']);
+                        console.log(person1['lastname']);
+                        console.log(person1['age']);
+                        console.log(person1['남자니']);
+
+                        
+
+                        console.log('객체.객체.속성');
+                        console.log(person.myCar.type);
+                        console.log(person.myCar.type);
+                        console.log(person.myCar.type);
+
+
+                        //요소의 개수만큼만 반복
+                        /* 
+                        for of
+                        for(let 변수명 of HTML 컬렉션)
+                            변수명:코드;
+
+                            b요소 개수 만큼 for문을 반복한다.
+
+                            객체.forEach(function(ele,idx)(ver.ES5)
+
+                            화살표 함수의 매개변수 괄호는 매개변수 1개 일때만 생략할 수 있다.
+                            
+                            */
+
+
+                        /* 객체 접근 방법
+                        객체, 속성
+                        객체['속성']=
+                        person1.firstName;
+                        person1["firstName"];
+
+                        출력
+                        div.innerText='값'
+                        div.innerHtml
+                        div.textcontent
+
+                        length는 객체의 전체 개수
+                        for of ->컬렉션 개수
+                        for in ->객체
+                        */
+
+                       //객체 사용방법
+                       person1.firstName;
+                       person1["firstName"];
+
+
+                        //객체 
+
+
+
+
+                       // new 키워드 추가
+                       const person3 = new Object();
+
+
+                       // 속성 변경
+                       person2.firstName = "John";
+                       person2.lastName = "Doe";
+                       person2.age = 50;
+                       person2.eyeColor = "blue";
+
+                       const person = {
+                           "이름": "John",
+                           "성"  : "Doe",
+                           "나이": 50,
+                           "남자니?": true,
+                           "성과 이름":function(){
+
+                            return person.성 +""+person.이름
+                            return this.firstName +""+this.이름
+                           }
+                        };
+
+                        /* mycar{
+                    type:"fiat",
+                      model:"500",
+                      color:"white",
+                        } */
+
+                        fullname();
+                        document.getElementById('아이디명');
+
+
+
+                    });
+        </script>
+    </head>
+    <body>
+        <h1>객체</h1>
+        <div>출력</div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>변수(variable)</h1>
+    <p>변수는 데이터(값)을 저장하는 공간이다.</p>
+    <script>
+        //표현식,문(statement)
+        //키워드 식별자= 값;
+        //=은 대입(할당)연산자
+        /* 
+        변수?값 저장 및 유지하는 공간
+        형식:
+        키워드 식별자=값;
+        키워드: var, let,const
+        식별자: 첫 글자는 영문자, 두 번째 글자부터 숫자와 조합, 대소문자를 구별한다.
+        =은 대입(할당)연산자로 
+        
+        
+        */
+
+        //변수 선언 및 할당
+        var a = 5;
+        var a2="오";
+        //재할당
+        var a3= true;
+        var a4=function(){};
+        var a5=document.querySelector('h1').style;
+        a5.color="red";
+        a5.fontSize="10px";
+        a5.border="1px solid blue";
+
+
+        document.querySelector('p').style.color="blue";
+        document.querySelector('p').style.fontSize="30px";
+        document.querySelector('p').style.border="1px solid red";
+        //변수="변수"
+        var a6=a;
+        //b에 2를 할당한다.
+        b =2;
+
+        //e,f는 undefinded가 할당된다.
+        var c=5,d=2,e,f;
+        var c=5;
+        var d=2;
+        var e;
+        var f;
+
+        console.log("a=",a);
+        console.log("b=",b);
+        console.log("c=",c);
+        console.log("d=",d);
+        console.log("e=",e);
+        console.log("f=",f);
+
+
+    </script>
+</body>
+</html>

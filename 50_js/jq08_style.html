@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>요소에 스타일 적용하기</h1>
+    <div>박스1</div>
+    <div>박스2</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    // element.style.css속성명 ="속성값";
+    // 객체 {속성:값, 속성: 값,...}
+    // 함수  function(){}
+    /* 객체는 속성과 메서드를 가지고 있다. */
+              
+
+    //객체.메서드(인수,인수,...);
+    // element.메서드(css속성명,"속성값") ="속성값";
+    // element.style.css속성명(css속성명,"속성값") ="속성값";
+    
+    /* 
+    방법2{속성:값, 속성: 값,...}
+    객체 형식으로 작성하면 속성명에 ""를 생략할 수 있다.
+    css속성명우로 기록하면 ""를 사용하고, 카멜표기법으로 표기하면 ""를 생략할 수 있다. */
+
+    //변수 선언
+    const eleDiv =$('div').eq(0);
+
+    //케멜 실행코드
+    eleDiv.css({
+        width:"100px", 
+        height:100, 
+        backgroundColor:"red"
+        
+    });
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

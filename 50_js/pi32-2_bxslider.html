@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.css">
+        <style>
+            #slidewrap{
+                position: relative;
+                height: 450px;
+               /*  width: 1200px; */
+                margin: 0 auto;
+                
+            }
+            img{
+                width: 100%;
+                height: 450px;
+                object-fit: cover;
+            }
+            .bx-wrapper {
+      
+            box-shadow: none;
+            border: none;
+            margin-bottom: 0;
+        }
+        .bx-viewport{
+            height: 100%;
+        }
+        /* 인디케이터(페이저)의 위치 케로셀 아래 부터 20만큼 떨어짐bottom: 20px */
+       
+        .bx-wrapper .bx-pager {
+            bottom: 20px;
+        }
+        /* 인디케이터 색상 변경  */
+        /* 전체 색상 */
+        .bx-wrapper .bx-pager.bx-default-pager a:focus,
+        .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background: #999;
+            /* 페이저 아이템의 간격 */
+            margin: 0 8px;
+        }
+        /* 현재 보이는 이미지 색상 */
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            /* transform: scale(2, 2); */
+            background: #fff;
+        }
+
+        /* 이전 */
+        .bx-wrapper .bx-controls-direction a {
+            width: 60px;
+            height: 60px;
+            display: none;
+        }
+
+        .bx-wrapper .bx-prev {
+            left: 195px;
+            /* background: url()반복 x위치 y위치  */
+            background: url(../assets/cleft.svg) no-repeat 0px 0px/60px 60px;
+        }
+        /* 다음 */
+        .bx-wrapper .bx-next {
+            right: 195px;
+            background: url(../assets/cright.svg) no-repeat 0px 0px/60px 60px;
+        }
+        /* next 버튼 호버시 사라지는 현상 초기화 */
+        .bx-wrapper .bx-next:focus,
+        .bx-wrapper .bx-next:hover {
+            background-position: 0 0;
+        }
+
+       /* 폰 */
+       #slideWrap img:last-of-type {
+            display: none;
+        }
+
+
+        @media (min-width: 768px) {
+
+            #slideWrap img:first-of-type {
+                display: none;
+            }
+            #slideWrap img:last-of-type {
+                display: block;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            /* 이전/다음 버튼 */
+            .bx-wrapper .bx-controls-direction a {
+                /* 크기 */
+                display: block;
+            }
+        }
+
+
+
+        </style>
+        <!-- 제이쿼리 라이브러리가 위쪽으로 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- bx슬라이더 라이브러리 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js"></script>
+        <script>
+          
+            $(() => {
+                //<body>태그의 $(."bxslide")<div class="bxslide">태그의 class 이름과 같으면 된다.
+                $(".bxslider").bxSlider({
+                    //자동슬라이더
+                    auto: true,
+                    //play, pause(일시정지)기본값
+                    //autoControls: false,
+                    stopAutoOnClick: true,
+                    //pager: true,->동그라미 보이게 할때
+                    //슬라이드크기(단위:px)
+                    //slideWidth: 1200
+                    //controls: true (기본값) -> next/prev 버튼
+                    
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!--https://bxslider.com/  -->
+      
+        <div id="slidewrap">
+            <div class="bxslider">
+                <div>
+                    <!-- 폰 -->
+                  
+                    <img src="../assets/1715657283331.jpg" alt="슬라이드1">
+                </div>
+
+                <div>
+              
+                    <img src="../assets/1680589479787.jpg"alt="슬라이드2">
+                </div>
+                <div>
+                    
+                    <img src="../assets/1690788949437.jpg" alt="슬라이드3">
+                </div>
+                <div>
+                    <img src="../assets/1712027246288.jpg"alt="슬라이드4">
+                </div>
+                <div>
+                    <img src="../assets/1713842036512.jpg"alt="슬라이드5">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

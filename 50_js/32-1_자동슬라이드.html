@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            vertical-align: top;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 슬라이드 소스 코드 */
+        #slideWrap {
+            /* fixed의 left, top 기준은 뷰포트이다.  */
+            /* absolute의 부모가 없으면 left, top의 기준은 뷰포트이다.  */
+
+            /* 정중앙배치 */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            overflow: hidden;
+
+
+        }
+
+        #slideWrap ul {
+            /* li의 가로배치 display: flex; */
+            display: flex;
+            /* left 좌우이동 */
+            /* relativ의 lef,top의 기준은 자기 자신이다. */
+            position: relative;
+            left: 0;
+        }
+    </style>
+    <script>
+
+        window.addEventListener("DOMContentLoaded", () => {
+            // 요소 찾기
+            /* querySelctor: 한개 ,querySelctor:여러개 */
+            const slide = document.querySelector("#slideWrap");
+            const slideList = slide.querySelector("ul");
+            const slideListItem = slideList.querySelectorAll("li");
+            const slideListItemImg = slideList.querySelectorAll("img");
+
+            // 요소 순번
+            let idx = 0;
+            // 슬라이드 전환 시간(스피드)
+            const speed = 1000;
+
+            // 슬라이드 개수:4개
+            //lenght는 htmls, dom개수
+            const slideCount = slideListItemImg.length + 1;
+            console.log(slideCount);
+
+            // 슬라이드 크기
+            const slideWidth = 30;
+            const slideHeight = 30;
+
+            /* 슬라이드 크기 및 함수 호출 */
+            slideSize();
+
+            function slideSize() {
+                // 슬라이드 크기
+                //slide 는 div#slidewrap
+                slide.style.width = slideWidth + "%";
+                slide.style.height = slideHeight + "%";
+                /* slideList: ul */
+                slideList.style.width = 100 * slideCount + "%";
+                slideList.style.height = 100 + "%";
+
+                /* for(표현식1; 표현식2; 표현식3)
+                   for(let i =0; i< 10 ;i++) {코드;}
+                
+                for(변수 of 컬렉션)
+                for(변수 of 배열)
+                
+                */
+
+
+                /* for of의 반복문 */
+                for (let i = 0; i < slideListItem.length + 1; i++) {
+                     slideListItem[i].style.width = 
+                    100 + "%"; }
+                /* for of의 반복문(ver.ES6) */
+                /*   for (x of slideListItem) {
+                    x.style.width = 100 + "%";
+                  } */
+            }
+
+            // ul의 첫 번째 요소 ul끝에 복제 (반드시 크기를 지정하고 복제해야 한다!)
+
+
+            /* 객체
+            
+            firstElementChild ->마지막 자식 요소
+            lasttElementChild ->첫번째 자식 요소
+            
+               메소드 객체.appendChild(요소)-> 객체 맨 끝에 요소 추가
+                          예)ul.appendChild(li)->ul의 맨 끝에 첫번째 li 추가
+
+                          객체.insertBefore() ->이전에 요소 추가
+                          cloneNode(true)
+               속성   
+               이벤트 
+               
+             <정의>  
+            document.documentElement -> html
+            document. body ->body
+            */
+           //ul의 첫 번째 요소를 짤라서 맨끝에 첫번째 li에 추가
+            slideList.appendChild(slideList.firstElementChild.cloneNode(true));
+
+            // 2초 마다 자동 슬라이드 함수 호출
+            setInterval(autoSlide, speed);
+
+            // 자동 슬라이드 함수 선언
+            function autoSlide() {
+                idx++;
+                slideList.style.left = -100 * idx + "%";
+                slideList.style.transition = speed / 2000 + "s";
+
+                if (idx === slideCount) {
+                    idx = 0;
+                    slideList.style.left = "0%";
+                    slideList.style.transition = "0s";
+                    setTimeout(() => {
+                        idx = 1;
+                        slideList.style.left = -100 * idx + "%";
+                        slideList.style.transition = speed + "s";
+                    }, 0);
+                }
+            }
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <div id="slideWrap">
+        <ul>
+            <li><img src="../assets/pic1.jpg" alt="이미지1"></li>
+            <li><img src="../assets/pic2.jpg" alt="이미지2"></li>
+            <li><img src="../assets/pic3.jpg" alt="이미지3"></li>
+        </ul>
+    </div>
+</body>
+
+</html>
