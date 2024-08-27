@@ -10,9 +10,11 @@ body {
     line-height: 1.5;
 }
 
-h2 {
+.box1,h2 {
     font-size: 22px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -40,47 +42,41 @@ h1 {
 }
 
 
-/* 매장찾기 */
+/*공통 */
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-#sec1{
-    width: 608px;
-    height: 249px;
-    background-color: #009132;
-    margin: 0 0 0 0px;
-    padding: 6px 6px 6px 6px;
-    top: 0;
-    left: 0;
-    transform: translate(50%, 50%);
 }
-
-
 
 
 /* 전화상담문의 */
-#sec2{
+#sec1,#sec2{
 
     width: 608px;
     height: 249px;
     background-color: #009132;
-    margin: 0 0 0 0px;
-    padding: 6px 6px 6px 6px;
-    top: 0;
-    left: 0;
-    transform: translate(50%, 50%);
+    margin: 23px;
+  
 
 }
 
-.box2>.container {
+
+/*하얀색 박스 */
+.box1,.box2 {
     display: flex;
-    width: 602px;
-    height: 237px;
     background-color: #fff;
+    width: 602px;
+    height: 243px;
+    padding: 4 4 4 4px;
 }
 
 
-.container #choose img {
-    position: absolute;
+.box1 img,.box2 img {
+    /* position: absolute; */
     width: 140px;
     height: 108px;
-    transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
 }
+

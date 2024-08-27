@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아코디언 메뉴</title>
+    <style>
+        /* 초기값 */
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        ul {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-size: 15px;
+            line-height: 1.6;
+            font-family: "굴림", sans-serif;
+            background: #fff;
+        }
+
+        header {
+            width: 200px;
+            height: 650px;
+            border: 1px solid;
+            padding: 16px;
+        }
+
+        /* 1depth */
+        .main>li {
+            background: rgb(210, 86, 86);
+            text-align: center;
+            border-bottom: 1px solid rgb(174, 40, 40);
+            padding: 8px 0;
+        }
+
+        .main>li>a {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* 2depth */
+        .sub {
+            /* 서브 메뉴 숨기기 */
+            /* height: 0;
+            overflow: hidden; */
+        }
+
+
+        .sub li a {
+            font-size: 14px;
+            color: #333;
+        }
+        /* 제이쿼리 라이브러리 */
+    
+
+       /*  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+        <script>
+            $(()=>{
+                //메인메뉴한개:.main>li>a
+                //마우스를 올리면 :mouseenter
+                //서브메뉴전체: .sub
+                //열린다.
+                $('.main>li>a').mouseenter(()=>{
+                    //서브메뉴 전체가 열린다.
+                    $(this).find('.sub').slideDown();
+                });
+                $('.main>li>a').mouseenter(()=>{
+                    //서브메뉴 전체가 열린다.
+                    $(this)..find('.sub').slideUp();
+                });
+                
+                //페이지가 열리자 마자 서브페이지 전체 닫기
+                $('sub').hide();
+                //열린다
+                //show() ->transition :0s;
+                //fadeIn()-> transition :0.4s; 서서히
+
+
+                //닫힌다
+                //hide()
+                //fadeout()
+                //slideup()
+
+                //animate()
+            });
+            </script> */
+    
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav id="gnb">
+            <!-- 1depth -->
+            <ul class="main">
+                <li><a href="#">분양단지</a>
+                    <!-- 2depth -->
+                    <ul class="sub">
+                        <li><a href="#">분양중인 단지</a></li>
+                        <li><a href="#">분양예정 단지</a></li>
+                        <li><a href="#">분양완료 단지</a></li>
+                        <li><a href="#">연간분양계획</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">브랜드</a>
+                    <ul class="sub">
+                        <li><a href="#">브랜드 스토리</a></li>
+                        <li><a href="#">브랜드 아이덴티티</a></li>
+                        <li><a href="#">특화아이템</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">아너스빌 멤버스</a>
+                    <ul class="sub">
+                        <li><a href="#">아너스빌 소식</a></li>
+                        <li><a href="#">청약가이드</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">마이 아너스빌</a>
+                    <ul class="sub">
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">1:1 문의</a></li>
+                        <li><a href="#">A/S 문의</a></li>
+                        <li><a href="#">관심단지 관리</a></li>
+                        <li><a href="#">개인정보 변경</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

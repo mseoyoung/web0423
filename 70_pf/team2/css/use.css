@@ -1,8 +1,68 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.5 "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+}
 .box{
-    width: 150px;
-    height: 150px;
-    /* background-color: aqua; */
-    margin: 20px;
-    border: 1px solid black;
+width: 1920px;
+height: 3499px;
+}
+.box h2{
+    font-size: 40px;
+    text-align: center;
+    color: #FFC20D;
+}
+.box h2 span{
+    color:#009132;
+}
+.box h3{
+    font-size: 28px;
+    text-align: center;
+    color: #66666B;
+}
+/* 스테이크 & 치즈 */
+
+/* 01.
+.stake .container{
+    display: flex;
+    width: 56px;
+    height: 52px;
+    color: #FFC20D;
+}
+*/
+
+.stake.h1span{
+    font-size: 28px;
+    color: #fff;
+}
+.stake h1{
+    display: flex;
+   font-size:28px ;
+}
+/* 노랑색 박스 */
+.y{
+    display: flex;
+    width: 1920px;
+    height: 507px;
+    background-color: #FFC20D;
+}
+.b{
+    display: flex;
+    width: 468px;
+    height: 306px;
+    background: #fff;
+    margin-left: 275px;
+    transform: translate(50px,50px);
+}
+.want{
+    display: flex;
+    font-size: 22px;
+    text-align: center;
+    
 }
