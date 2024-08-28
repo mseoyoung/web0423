@@ -39,6 +39,12 @@ body {
     align-items: center;
   /*   transform: translate(50%,-50%); */
 }
+
+.a{
+margin: 10px;
+
+}
+
 span{
     font-size: 22px;
     /* line-height: 100px; */
@@ -47,7 +53,9 @@ span{
     transform: translate(50%,50%); */
     
 }
-img{
+.choose img{
+    display: flex;
+    align-items: top;
     width: 552px;
     height: 331px;
 }
