@@ -49,7 +49,7 @@ height: 2673px;
     text-align: center;
 }
 
-.a .c{
+.a, .c{
     display: flex;
     width: 56px;
     height: 52px;
@@ -61,6 +61,10 @@ height: 2673px;
     align-items: top;
    /*  margin: 58px; */
 }
+/* .c span {
+    padding: 56px;
+    
+} */
 .stake.h1span{
     font-size: 28px;
     color: #fff;
@@ -70,7 +74,7 @@ height: 2673px;
     text-align: center;
 }
 .stake h1{
-   display: list-item;
+   /* display: list-item; */
    text-align: center;
    list-style: none;
    font-size:28px ;
@@ -86,9 +90,10 @@ height: 2673px;
     margin: 10px;
 }
 .a span{
-text-align: center;
-justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
+
 
 .a{
     text-align: center;
@@ -219,14 +224,18 @@ justify-content: center;
 .olive{
     margin:32px;
 }
+.olive img{
+    justify-content: center;
+    align-items: top;
+}
 /* 글자 */
 
 /* 3.써브웨이 클럽 */
-.group .c{
+.group .c {
     display: flex;
     width: 56px;
     height: 52px;
-    background-color:#58006C;
+    /* background-color:#58006C; */
     color: #fff;
     font-size: 20px;
     text-align: center;
@@ -258,6 +267,7 @@ vertical-align: top;
     text-align: center;
     
 }
+/* 보라색 상자 안에 숫자3 */
 .aaa{
     display: flex;
     justify-content: left;
@@ -285,13 +295,15 @@ justify-content: center;
     align-items: top;
     margin: 55px;
    }
-   .taste{
-    margin:32px;
-}
-.salad p,.lan p,.olive p {
+  
+.taste p,.cheeses p,.picle p {
     font-size: 16px;
     text-align: center;
 }
+ .taste{
+    margin: 32px;
+   }
+
 .cheeses{
     margin:32px;
 }
@@ -299,5 +311,10 @@ justify-content: center;
 .picle{
     margin:32px;
 }
+.oli.picle{
+    margin-right:32px;
+}
+
+
 
 
