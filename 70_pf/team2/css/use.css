@@ -5,14 +5,21 @@
 :root {
     font-size: 10px;
 }
+*{
+    box-sizing: border-box;
 
+    line-height: none;
+}
+body{
+        background: #fff;
+}
 body {
     font: 1.5rem/1.5 "Noto Sans KR", sans-serif;
     line-height: 1.5;
 }
 .box{
-width: 1920px;
-height: 3499px;
+width: 1931px;
+height: 2673px;
 }
 .box h2{
     font-size: 40px;
@@ -36,12 +43,24 @@ height: 3499px;
     height: 52px;
     background-color: #FFC20D;
 }
-.container span{
+.container p{
     font-size: 20px;
     color: #fff;
-   /*  text-align: center; */
+    text-align: center;
 }
 
+.a .c{
+    display: flex;
+    width: 56px;
+    height: 52px;
+    background-color: #FFC20D;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: top;
+   /*  margin: 58px; */
+}
 .stake.h1span{
     font-size: 28px;
     color: #fff;
@@ -58,12 +77,26 @@ height: 3499px;
 }
 
 .a{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 58px;
+}
+.a b{
+    margin: 10px;
+}
+.a span{
+text-align: center;
+justify-content: center;
+}
+
+.a{
     text-align: center;
 }
 /* 노랑색 박스 */
 .y{
     display: flex;
-    width: 1920px;
+    width: 1929px;
     height: 507px;
     background-color: #FFC20D;
 }
@@ -129,7 +162,7 @@ height: 3499px;
 .g{
   display: flex;
   background-color:#009132;
-  width: 1920px;
+  width: 1929px;
   height: 507px;
 }
 .fun{
@@ -186,6 +219,7 @@ height: 3499px;
 .olive{
     margin:32px;
 }
+/* 글자 */
 
 /* 3.써브웨이 클럽 */
 .group .c{
@@ -209,7 +243,7 @@ vertical-align: top;
 }
 .health{
     display: flex;
-    width: 1920px;
+    width: 1929px;
     height: 507px;
     background-color: #FFC20D;
 }
@@ -224,7 +258,19 @@ vertical-align: top;
     text-align: center;
     
 }
-
+.aaa{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 58px;
+}
+.aaa b{
+    margin: 10px;
+}
+.aaa span{
+text-align: center;
+justify-content: center;
+}
 .up b{
     display: flex;
     font-size: 28px;
