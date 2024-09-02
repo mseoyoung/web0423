@@ -11,10 +11,11 @@ function Card(props){
             </div>
             <div>
                 <span className="card_rate">예매율{props.mrate}%</span>
-                <span className="card_date">개봉일{props.mdate}</span>
+                <span className="card_point">평점{props.mpoint}%</span>
+                <br></br>
+                <span className="card_date">{props.mdate}개봉</span>
             </div>
             <div className="card_btn">
-                <button>{props.mheart}</button>
                 <a href="#">예매</a>
             </div>
         </li>

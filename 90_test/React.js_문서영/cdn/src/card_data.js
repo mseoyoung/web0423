@@ -33,37 +33,39 @@
 
 const cards = [
     {
-        cimg: "https://img.megabox.co.kr/SharedImg/2024/07/03/QaslTt607PkNH8mPWm6ZUH3UwDx2bHoH_420.jpg",
+        cimg: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88403/88403_320.jpg",
         ctit: "사랑의 하츄핑",
         cage: "All",
-        crate: 1,
+        crate: 0.4,
+        cpoint:"97",
         cdate: "2024.08.07",
-        cheart: 487
     },
     {
-        cimg: "https://img.megabox.co.kr/SharedImg/2024/06/17/bAW9rJyLUHvBLY6x9MNMbU19K2B565sy_420.jpg",
-        ctit: "인사이드 아웃 2",
+        cimg: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88411/88411_320.jpg",
+        ctit: "10 라이브즈",
         cage: "All",
-        crate: 0.2,
-        cdate: "2024.06.12",
-        cheart: 960
+        crate: 0.4,
+        cpoint:"94",
+        cdate: "2024.08.15",
     },
     {
-        cimg: "https://img.megabox.co.kr/SharedImg/2024/06/24/RZWMFjfujP4iNHOxih6UHFqE62ApTmbV_420.jpg",
-        ctit: "슈퍼배드 4",
+        cimg: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000088/88183/88183_320.jpg",
+        ctit: "가필드 더 무비",
         cage: "All",
         crate: 0.1,
-        cdate: "2024.07.24",
-        cheart: 900
+        cpoint:"94",
+        cdate: "2024.08.23",
     },
     {
-        cimg: "https://img.megabox.co.kr/SharedImg/2024/08/01/BUsWispT4T7lkUapLBCGyK17FuX5kKk6_420.jpg",
-        ctit: "파일럿",
-        cage: "12",
-        crate: 4.2,
-        cdate: "2024.07.31",
-        cheart: 990
+        cimg: "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000087/87864/87864_320.jpg",
+        ctit: "인사이드 아웃2",
+        cage: "All",
+        crate: 0,
+        cpoint:"97",
+        cdate: "2024.06.12",
     },
 ];
+
+
 
 // export default cards;

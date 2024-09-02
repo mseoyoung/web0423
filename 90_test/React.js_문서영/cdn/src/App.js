@@ -9,9 +9,11 @@ function App() {
                     mtit={item.ctit} 
                     mage={item.cage} 
                     mrate={item.crate} 
+                    mpoint={item.cpoint}
                     mdate={item.cdate} 
                     mheart={item.cheart} 
                 />
+
             ))}
         </ul>
     );
