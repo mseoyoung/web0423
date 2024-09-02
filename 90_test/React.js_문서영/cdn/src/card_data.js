@@ -53,7 +53,7 @@ const cards = [
         ctit: "가필드 더 무비",
         cage: "All",
         crate: 0.1,
-        cpoint:"94",
+        cpoint:"95",
         cdate: "2024.08.23",
     },
     {
