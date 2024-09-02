@@ -26,7 +26,16 @@ h1 {
     font-size: 28px;
     font-weight: 700px;
 }
+img{
+    display: flex;
+    justify-content: center;
+    align-items: left;
 
+}
+h2{
+    vertical-align: top;
+    font-weight: 700;
+}
 
 /* 전체 크기 */
 .box {
@@ -49,7 +58,13 @@ h1 {
     align-items: center;
 
 }
+/* 매장 찾기 주문 */
+.choose img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
 
 /* 전화상담문의 */
 #sec1,#sec2{
@@ -59,17 +74,28 @@ h1 {
     background-color: #009132;
     margin: 23px;
   
-
+}
+.call{
+   text-align: center;
 }
 
+.box2,h2{
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
 
 /*하얀색 박스 */
 .box1,.box2 {
     display: flex;
     background-color: #fff;
     width: 602px;
-    height: 243px;
-    padding: 4 4 4 4px;
+    height: 190px;
+    margin: 23px;
+    overflow: hidden;
+    padding-left: 5px;
 }
 
 
@@ -77,6 +103,6 @@ h1 {
     /* position: absolute; */
     width: 140px;
     height: 108px;
-  transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
 }
 
