@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에반 콘텐츠</title>
+    <style>
+        body,
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+        img{
+            width: 100px;
+        }
+        .inner{
+            padding: 24px;
+        }
+
+        .home-card {
+            display: grid;
+            grid-template-columns: 100px auto;
+            column-gap: 24px;
+
+        }
+
+        .home-card div {
+            background-color: rgba(255, 255, 255, 0.8);
+            /*  border: 1px solid red; */
+
+        }
+        .home-icon {
+            grid-row: 1/span 3;
+        }
+        @media (min-width:992px) {
+            
+            .home-card{
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="inner">
+        <div class="home-card">
+            <div class="home-icon"> <a href="hana_v2/assets/1.png"></a>
+                <img src="../assets/thumv.svg" alt="준비중...">
+            </div>
+            <div class="home-title">
+                <h3>하나투어 <span>(Hanatour)</span></h3>
+            </div>
+            <div class="home-description">
+                <p>Carousel(캐로셀), Scroll Motion(스크롤 모션), Parallax Scrolling(패럴렉스 스크롤링), Tab(탭), Video Player(비디오 플레이어)를 AWD(적응형) 페이지 입니다.</p>
+            </div>
+            <div class="home-btn"><a href="#">Read more...</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

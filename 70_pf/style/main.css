@@ -1,6 +1,70 @@
 @charset "utf-8";
-@import url(reset.css);
-@import url(typo.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: 'NanumSquareNeo';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2');
+}
+
+/* reset */
+body,
+ul,
+h1,
+h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    /* 텍스트 밑줄 제거 */
+    text-decoration: none;
+}
+
+img {
+    width:100%;
+}
+
+
+/* font */
+html {font-size: 10px;}
+body {
+    font:1.5rem/1.5 "Noto Sans KR", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+nav a {
+    font-family: Georgia, 'NanumSquareNeo', Times, serif;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+a {
+    color: #444;
+    text-decoration: underline;
+}
+
+nav a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 
 /* :root는 HTML 태그를 가리킨다. */
 :root {
@@ -24,7 +88,7 @@ nav section {
 nav ul {
     display: flex;
 }
-/* 인스타그램 0 깃허브 */
+
 nav li:first-child::after {
     content: "";
     display: inline-block;
@@ -38,7 +102,7 @@ nav li:first-child::after {
 /* header */
 header {
     /* 패럴렉스 스크롤링 기법 */
-    background: url(../style/KakaoTalk_20240524_115349603.png) no-repeat 50% 50%/cover fixed;
+    background: url(../assets/bg-light.png) no-repeat 50% 50% / cover fixed;
     line-height: 200px;
 }
 
@@ -47,30 +111,32 @@ main {
     padding-bottom: 200px;
 }
 
-section {
-  /*   width: 940px; */
-    margin: auto;
-    border: 1px solid;
-}
-
 h2 {
     margin: 56px 0;
 }
 
+section {
+    padding: 0 24px;
+}
+
 .home-card {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 100px auto;
+    column-gap: 24px;
 }
 
 .home-icon {
+    grid-row: 1 / span 3;
     width: 100px;
     height: 100px;
-    background: #000;
+    background: #ffef11;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    transition: 0.3s;
 }
-
-.home-description {
-   /*  width: 790px; */
-    border:1px solid red;
+.home-icon:hover {
+    box-shadow: 0px 0px 5px 2px #ccc;
 }
 
 h3 span {
@@ -80,4 +146,12 @@ h3 span {
 /* footer */
 footer {
     text-align: center;
+}
+
+@media (min-width: 992px) {
+    section {
+        width: 50%;
+        margin: auto;
+        padding: 0;
+    }
 }

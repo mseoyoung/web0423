@@ -7,7 +7,6 @@
 }
 *{
     box-sizing: border-box;
-
     line-height: none;
 }
 body{
@@ -49,7 +48,7 @@ height: 2673px;
     text-align: center;
 }
 
-.a, .c{
+/* .a{
     display: flex;
     width: 56px;
     height: 52px;
@@ -59,23 +58,31 @@ height: 2673px;
     text-align: center;
     justify-content: center;
     align-items: top;
-   /*  margin: 58px; */
+    margin: 58px;
+} */
+ .a {
+    display: flex;
+    align-items: center;
+ }
+.c {
+    padding: 16px;
+    background-color: #FFC20D;
+
 }
-.c span {
-    padding: 56px;}
+
     
 
-.stake.h1span{
+.stake h1 {
     font-size: 28px;
-    color: #fff;
+    color: #000;
 }
-.container>.a h1{
-    /* display: flex; */
+/* .container>.a h1{
+    display: flex;
     text-align: center;
-}
+} */
 .stake h1{
    /* display: list-item; */
-   text-align: center;
+   /* text-align: center; */
    list-style: none;
    font-size:28px ;
 }
@@ -83,21 +90,10 @@ height: 2673px;
 .a{
     display: flex;
     justify-content: left;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 58px;
 }
-.a b{
-    margin: 10px;
-}
-.a span{
-    text-align: center;
-    justify-content: center;
-}
 
-
-.a{
-    text-align: center;
-}
 /* 노랑색 박스 */
 .y{
     display: flex;
