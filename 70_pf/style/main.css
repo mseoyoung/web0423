@@ -24,7 +24,7 @@ nav section {
 nav ul {
     display: flex;
 }
-
+/* 인스타그램 0 깃허브 */
 nav li:first-child::after {
     content: "";
     display: inline-block;
@@ -48,8 +48,9 @@ main {
 }
 
 section {
-    width: 940px;
+  /*   width: 940px; */
     margin: auto;
+    border: 1px solid;
 }
 
 h2 {
@@ -68,7 +69,8 @@ h2 {
 }
 
 .home-description {
-    width: 790px;
+   /*  width: 790px; */
+    border:1px solid red;
 }
 
 h3 span {
