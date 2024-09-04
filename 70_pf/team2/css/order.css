@@ -43,6 +43,12 @@ h2{
     height: 796px;
     background-color: #FFC20D;
 }
+.box .barw {
+    display: flex;
+}
+.box .barw img {
+    margin-top: 9px;
+}
 
 
 .box p {
@@ -52,7 +58,7 @@ h2{
 
 
 /*공통 */
-.a{
+.common{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +79,7 @@ h2{
     height: 249px;
     background-color: #009132;
     margin: 23px;
+    padding:24px;
   
 }
 .call{
@@ -92,16 +99,30 @@ h2{
     display: flex;
     background-color: #fff;
     width: 602px;
-    height: 190px;
-    margin: 23px;
-    padding-left: 5px;
+    height: 243px;
+    /* margin: 23px; */
+    padding: 0 20 0px;
 }
 
-
-.box1 img,.box2 img {
-    /* position: absolute; */
+/* 이미지 */
+img{
     width: 140px;
     height: 108px;
-    transform: translate(50%, 50%);
+    padding:0 40px;
 }
+
+/* 폰트 */
+
+.bar img{
+    width: 5px;
+    height: 17px;
+}
+
+b{  
+    font-size: 22px;
+    text-align: center;
+}
+
+
+
 
