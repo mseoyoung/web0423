@@ -81,15 +81,15 @@ iframe {
 
 #s1 .container-fluid {
     height: 100vh;
-    background-image: url(../assets/p1.jpg);
+    background-image: url(../assets/parallax1.jpg);
 }
 #s3 .container-fluid {
     height: 400px;
-    background-image: url(../assets/p2.jpg);
+    background-image: url(../assets/parallax2.jpg);
 }
 #s4 .container-fluid {
     height: 400px;
-    background-image: url(../assets/p3.jpg);
+    background-image: url(../assets/parallax3.jpg);
 }
 
 /* background-image Title */
@@ -126,9 +126,6 @@ iframe {
     text-align: center;
     padding: 32px;
 }
-.counter .col-sm{
-    padding: 24px 0;
-}
 .counter span {
     display: block;
     font-size: 2.4rem;
@@ -142,33 +139,26 @@ iframe {
 #s3 .col {
     padding: 8px;
 }
-#s4 input {
-    width: 100%;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 4px 0;
-}
-#s4 .row p {
-    margin: 24px 0 8px;
-}
-#s4 ul{
 
-}
-#s4 li {
-    line-height: 2;
-}
 @media (min-width: 992px) {
     /* section4: contact */
+    #s4 li {
+        line-height: 2;
+    }
+    #s4 .row p {
+        margin: 24px 0 8px;
+    }
 
+    #s4 input {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 4px 0;
+    }
     #s4 button.btn {
         margin-top: 16px;
     }
-    #s4 form div{
-        display: flex;
-        justify-content: space-between;
-    }
     #s4 [name="user_name"] {
-        margin-right: 49.5%;
+        margin-right: 1%;
     }
     #s4 [name*="user"] {
         width: 49.2222222%;
@@ -176,16 +166,8 @@ iframe {
     #s4 [name="message"] {
         width: 100%;
     }
-    footer {
-        padding: 30px 0;
-        background: #000;
-        text-align: center;
-        color: #fff;
-    }
 }
-.skill{
-    margin-top: 48px;
-}
+
 /* footer */
 footer {
     padding: 60px 0;
