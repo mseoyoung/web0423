@@ -39,10 +39,6 @@
     width: 140px;
     height: 108px;
 }
-.purple img{
-    width: 140px;
-    height: 108px;
-    justify-content: left;
-    align-items: left;
+span{
+    text-align: center;
 }
-

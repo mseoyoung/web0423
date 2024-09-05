@@ -1,19 +1,25 @@
 @charset "utf-8";
 
-/* reset(초기화) */
-body,
-ul,
-h1,
-h2 {
-    margin: 0;
+/* reset */
+* {
+    box-sizing: border-box;
 }
-
+body,h1,h2,h3,ul,p {
+    margin:0;
+}
 ul {
-    padding: 0;
-    list-style-type: none;
+    padding:0;
+    list-style: none;
 }
 
 a {
-    /* 텍스트 밑줄 제거 */
     text-decoration: none;
+}
+body {
+    background: #fff;
+}
+button {
+    border:none;
+    /* 손 모양 */
+    cursor: pointer;
 }
