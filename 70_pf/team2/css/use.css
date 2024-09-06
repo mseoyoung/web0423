@@ -1,0 +1,99 @@
+@charset "utf-8";
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.5 "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 28px;
+    font-weight: 700px;
+}
+
+.aa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;  
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+}
+.box1{
+   
+    width: 608px;
+    height: 249px;
+    background-color:#009132;
+    margin: 23px;
+   
+}
+
+.white{
+    display: block;
+    width: 602px;
+    height: 237px;
+    background:#fff;
+    margin: auto;
+    padding: 6px 12px 0 0;
+    margin: 0 6px 0 6px;
+    margin-top: 6px 6px 0 6px;
+    margin-bottom: 0 0 0 6px;
+   
+}
+
+
+.b{
+    display: block;
+    width: 602px;
+    height: 237px;
+    background:#fff;
+    margin: auto;
+    padding: 6px 12px 0 0;
+    margin: 0 6px 0 6px;
+    margin-top: 6px 6px 6px 0;
+   
+}
+/* 전체 크기 */
+.box {
+    width: 1920px;
+    height: 796px;
+    background-color: #FFC20D;
+}
+
+
+.box p,h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+
+
+
+/* .box2>.container {
+    display: flex;
+    width: 602px;
+    height: 237px;
+    background-color: #fff;
+}
+
+
+.container #choose img {
+    position: absolute;
+    width: 140px;
+    height: 108px;
+    transform: translate(50%, 50%);
+} */
