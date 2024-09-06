@@ -5,10 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>온라인주문페이지</title>
-    <link rel="stylesheet" href="../../css/order.css">
+    <link rel="stylesheet" href="../../css/order1.css">
     <link rel="icon" href="../../assets/images/subwayfavicon.svg">
     <link rel="stylesheet" href="../../css/temp.css">
     <script src="../../script/temp.js"></script>
+    <style>
+           /* 초기화 화면 */
+           body {
+                margin: 0;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                vertical-align: top;
+            }
+            /* 폰 */
+            img:first-of-type, img:nth-of-type(2){display: none;}
+
+            @media (min-width:768px) {
+                /* 테블릿 */
+                img:last-of-type{display: none;}
+                img:nth-of-type(2){display: block;}
+            }
+            @media (min-width:992px) {
+                /* 데스크탑 */
+                img:nth-of-type(2) {display: none;}
+                img:first-of-type{display: block;}
+            }
+    </style>
 </head>
 
 <body>
@@ -243,39 +267,36 @@
         </header>
     </header><!-- //header -->
 
-
-
+    <!-- 온라인주문페이지 -->
     <div class="box">
-    
         <div class="barw">
-           <div class="bar">
-            <img src="../../assets/images/re.png" alt="막대기">
+            <div class="bar">
             </div>
-               <span><b>단체구매문의</b></span>
+            <span><b>단체구매문의</b></span>
         </div>
         <p>써브웨이는 <b>단체 주문</b>이 가능합니다.<br>
             단체구매문의 관련하여 궁금하신 문의사항은 가까운 매장 또는 아래방법으로 문의해주세요.
         </p>
-
-        
-        <!-- 매장찾기주문 -->
-        <div class="common">
-            <section id="sec1">
-                <div class="box1">
+        <div class="a">
+            <div class="green">
+                <div class="call">
                     <img src="../../assets/images/choose.svg" alt="주문그림">
-                    <span><b>매장찾기주문</b></span>
-                    <img src="../../assets/images/thumv.svg" alt=">">
+                    <span>매장에서 주문하기</span>
+                    <img src="../../assets/images/thumv.svg" alt="막대기">
                 </div>
-            </section>
+            </div>
 
-            <section id="sec2">
-                <div class="box2">
-                    <img src="../../assets/images/call.svg" alt="전화">
-                    <span><b>전화상담문의 </b>02-797-5036</span>
-                    </div>
+            <div class="puple">
+                <div class="choose">
+                    <img src="../../assets/images/call.svg" alt="">
+                    <span><b>전화상담하기<br> 02-797-5036</b></span>
                 </div>
-            </section>
+            </div>
+
         </div>
+
+
+    
 
     </div>
 <!-- 푸터 -->

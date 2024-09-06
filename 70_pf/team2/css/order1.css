@@ -1,0 +1,160 @@
+@charset "utf-8";
+.a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.green {
+    
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    padding: 24px;
+    
+}
+.puple{
+    display:flex;
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    padding: 24px;
+    margin: 23px;
+}
+.call.p{
+    font-size: 2.2rem;
+}
+.call,.choose {
+    background-color: #fff;
+    width: 602px;
+    height: 190px;
+    padding: 20px;
+    font-size: 30px;
+   
+}
+.call img{
+    width: 140px;
+    height: 108px;
+}
+span{
+    text-align: center;
+}
+
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font: 1.5rem/1.5 "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background: #fff;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700px;
+}
+/* 공통 */
+
+
+/* 전체 크기 */
+.box {
+    width: 1920px;
+    height: 796px;
+    background-color: #FFC20D;
+}
+
+
+.box p {
+    font-size: 22px;
+    text-align: center;
+}
+
+/* 매장찾기, 전화상담문의 */
+#sec1{
+
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    padding: 24px;
+    margin: 23px;
+}
+#sec2{
+    display:flex;
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    padding: 24px;
+    margin: 23px;
+}
+
+
+
+  
+
+
+/*이미지 넣기 */
+img{
+    width: 140px;
+    height: 108px;
+    margin: 20px;
+
+}
+
+
+/* 글자 */
+span{
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.green {
+    
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    padding: 24px;
+    
+}
+.puple{
+    display:flex;
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    padding: 24px;
+    margin: 23px;
+}
+.call.p{
+    font-size: 2.2rem;
+}
+.call,.choose {
+    background-color: #fff;
+    width: 602px;
+    height: 190px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.call img{
+    width: 140px;
+    height: 108px;
+}
+.call span{
+    justify-content: center;
+text-align: center;
+}
+
+
+
