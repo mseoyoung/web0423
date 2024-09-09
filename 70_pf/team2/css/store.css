@@ -21,14 +21,14 @@ body {
     line-height: 1.5;
 }
 /* 스탭1 */
-.step1{
+.tabwrap .step1{
     display: flex;
     width: 1920px;
     height: 627px;
     background-color: #FFC20D;
     margin-top: 10px;
 }
-.menu{
+.tabwrap .menu{
     width: 279px;
     height: 60px;
     background:#58006C;
@@ -44,7 +44,7 @@ body {
 .s{
 margin-top:105px;
 }
-img{
+.tabwrap img{
     display: inline-block;
     width: 552px;
     height: 331px;
@@ -55,7 +55,7 @@ img{
     height: 501px;
     margin-left: 320px;
 }
-.aa{
+.tabwrap .aa{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,22 +76,22 @@ img{
     color:#fff
 }
 
-.step2 b,span{
+.step2 b, .tabwrap span{
    
     font-size: 28px;
     line-height: 64px;
     margin-top:101px;
 
 }
-.s{
+.tabwrap .s{
     font-size: 28px;
 }
-.a{
+.tabwrap .a{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.a img{
+.tabwrap .a img{
     width: 606px;
     height: 501px;
     margin-left: 350px;
@@ -111,7 +111,7 @@ img{
     transform: translate(50px,50px);
     color:#fff
 }
-.step3 b,span{
+.step3 b,.tabwrap span{
     font-size: 28px;
     line-height: 64px;
     margin-top:101px;
@@ -121,7 +121,7 @@ img{
     justify-content: center;
     align-items: center;
 }
-.aaa img{
+.tabwrap .aaa img{
     margin-left: 320px;
 }
 /* 스텝4 */
@@ -139,12 +139,12 @@ img{
     transform: translate(50px,50px);
     color:#fff
 }
-.aaaa{
+.tabwrap .aaaa{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.aaaa img{
+.tabwrap .aaaa img{
     margin-left: 320px;
 }
 /* 스텝5 */
