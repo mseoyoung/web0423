@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url(./temp.css);
+@import url(./reset.css);
+body{
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* 글자 */
+.box{
+width: 1931px;
+height: 2673px;
+}
+.box h2{
+    font-size: 28px;
+    color:#FFC20D
+
+}
+.box h2 span{
+    font-size: 28px;
+    color: #009132;
+}
+.box{
+    text-align: center;
+}
+.box h3{
+    font-size: 28px;
+    color:#66666B;
+text-align: center;
+
+
+}
+/* 1. 스테이크 */
+.cc{
+    width: 56px;
+    height: 52px;
+    background-color:#FFC20D;
+}
+.cc span{
+    display: flex;
+    color: #fff;
+    font-size: 18px;
+}
+.b img{
+  margin: 10px;
+
+}
+.h{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 58px;
+}
+h1{
+    font-size: 28px;
+}
+
+.b{
+    display: list-item;
+    width: 468px;
+    height: 306px;
+    margin-left: 20px;
+    transform: translate(50px,50px);
+    list-style: none;
+    text-align: center;
+}
+.y{
+    display: flex;
+    width: 1920px;
+    height:507px ;
+    background: #FFC20D;
+}
+.buy{
+    font-size: 28px;
+    color: #000;;
+}
+/* 소스 */
+.source{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 60px;
+    
+}
+.cheese,.sources,.ve{
+    margin:32px;
+}
+.cheese p,.source p,.ve p {
+    font-size: 16px;
+    text-align: center;
+}
+.sources{
+    margin:32px;
+}
+
+.ve{
+    margin:32px;
+}
+
+.cheese img,.sources img,.ve img{
+    width: 249px;
+    height: 190px;
+}
+
+
+
+/* 2. 로스트 치킨 */
+.bb{
+    width: 56px;
+    height: 52px;
+    background-color:#009132;
+}
+.bb span{
+    color: #fff;
+    font-size: 18px;
+}
+/* 소스 */
+.g{
+   display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color:#009132;
+    width: 1929px;
+    height: 507px;
+}
+.fun{
+    display: list-item;
+    width: 468px;
+    height: 306px;
+    margin-left: 20px;
+    transform: translate(50px,50px);
+    list-style: none;
+    text-align: center;
+}
+.fun img{
+    margin: 10px;
+}
+.diet  {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 60px;
+}
+.salad{
+    margin:32px;
+}
+.salad p,.lan p,.olive p {
+    font-size: 16px;
+    text-align: center;
+}
+.lan{
+    margin:32px;
+}
+
+.olive{
+    margin:32px;
+}
+.olive img,.lan img,.salad img  {
+    width: 249px;
+    height: 190px;
+}
+
+/* 3.써브웨이 클럽 */
+.d{
+    width: 56px;
+    height: 52px;
+    background-color:#58006C;
+    color: #fff;
+}
+.group .c {
+    display: flex;
+    width: 56px;
+    height: 52px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: top;
+   /*  margin: 58px; */
+}
+
+.group h1{
+font-size: 28px;
+vertical-align: top;
+/* justify-content: center; */
+
+}
+.health{
+    display: flex;
+    width: 1929px;
+    height: 507px;
+    background-color: #FFC20D;
+}
+.up {
+    display: list-item;
+    width: 468px;
+    height: 306px;
+    margin-left: 20px;
+    transform: translate(50px,50px);
+    list-style: none;
+    text-align: center;
+    
+}
+/* 보라색 상자 안에 숫자3 */
+.aaa{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 58px;
+}
+.aaa .bb{
+    margin: 10px;
+}
+.aaa span{
+text-align: center;
+justify-content: center;
+}
+.up b{
+    display: flex;
+    font-size: 28px;
+    text-align: center;
+    margin: 32px;
+   /*  margin: 0 auto; */}
+
+   /* 소스들 */
+   .oli{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 55px;
+   }
+  
+.taste p,.cheeses p,.picle p {
+    font-size: 16px;
+    text-align: center;
+}
+ .taste{
+    margin: 32px;
+   }
+
+.cheeses{
+    margin:32px;
+}
+
+.picle{
+    margin:32px;
+}
+.oli.picle{
+    margin-right:32px;
+}
+.taste img,.cheeses img, .picle  img{
+    width: 249px;
+    height: 190px;
+}

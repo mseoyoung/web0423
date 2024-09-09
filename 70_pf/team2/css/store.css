@@ -6,6 +6,9 @@
 
     line-height: none;
 }
+li{
+    list-style: none;
+}
 body{
         background: #fff;
 }

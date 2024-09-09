@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+body{
+    background: #fff;
+    margin: 0 auto;
+}
+p{
+    font-size: 22px;
+    text-align: center;
+}
+.pen{
+    width: 1920px;
+    height: 796px;
+    background: #FFC20D;
+}
+
+/* 매장에서 주문하기 */
+.order{
+
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    margin: 23px;
+
+
+}
+.store{
+    width: 602px;
+    height: 190px;
+    background-color: #fff;
+    margin:20px;
+
+}
+
+
+/* 공통 */
+.common{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+/* 전화 주문 */
+.call{
+  
+    width: 608px;
+    height: 249px;
+    background-color: #009132;
+    margin: 23px;
+    
+
+}
+.choose{
+    width: 602px;
+    height: 190px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+/* 이미지 */
+
+
+/*  */
+.common>.choose{
+    margin: 0 20px 0 0;
+}
+
+

@@ -25,7 +25,7 @@ h1 {
     font-weight: 700px;
 }
 /* 공통 */
-.common{
+.a{
     display: flex;
     align-content: center;
     justify-content: center;
@@ -45,30 +45,9 @@ h1 {
 }
 
 /* 매장찾기, 전화상담문의 */
-#sec1{
 
-    width: 608px;
-    height: 249px;
-    background-color: #009132;
-    padding: 24px;
-    margin: 23px;
-}
-#sec2{
-    display:flex;
-    width: 608px;
-    height: 249px;
-    background-color: #009132;
-    padding: 24px;
-    margin: 23px;
-}
-/* 흰 박스 넣기 */
-.box1,.box2{
-    background-color: #fff;
-    width: 602px;
-    height: 190px;
-    padding: 20px;}
 
-  
+
 
 
 /*이미지 넣기 */
@@ -80,13 +59,8 @@ img{
 }
 
 
-/* 글자 */
-span{
-    font-size: 22px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+
+
 
 
 /* body{
@@ -98,7 +72,7 @@ span{
     height: 249px;
 
     background-color: #009132;
-    padding: 24px;
+   /*  padding: 24px; */
     
 }
 .puple{
@@ -124,5 +98,7 @@ span{
     width: 140px;
     height: 108px;
 }
-
+.call{
+    padding: 0 20px;
+}
 

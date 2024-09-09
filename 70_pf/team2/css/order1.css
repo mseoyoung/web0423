@@ -4,15 +4,62 @@
     align-content: center;
     justify-content: center;
 }
+body {
+    font: 1.5rem/1.5 "Noto Sans KR", sans-serif;
+    line-height: 1.5;
+}
 
+h1 {
+    font-size: 28px;
+    font-weight: 700px;
+}
+
+h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+    background: #fff;
+}
+
+span{
+    text-align: center;
+}
+
+
+:root {
+    font-size: 10px;
+}
+/* 공통 */
+.choose {
+    background-color: #fff;
+    width: 602px;
+    height: 190px;
+    padding: 20px;
+    font-size: 30px;
+}
+.call{
+    background-color: #fff;
+    width: 602px;
+    height: 190px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* 매장에서 주문하기 */
 .green {
-    
     width: 608px;
     height: 249px;
     background-color: #009132;
     padding: 24px;
+    margin: 23px;
     
 }
+
+
+/* 전화상담하기 */
 .puple{
     display:flex;
     width: 608px;
@@ -24,47 +71,13 @@
 .call.p{
     font-size: 2.2rem;
 }
-.call,.choose {
-    background-color: #fff;
-    width: 602px;
-    height: 190px;
-    padding: 20px;
-    font-size: 30px;
-   
-}
 .call img{
     width: 140px;
     height: 108px;
 }
-span{
-    text-align: center;
-}
 
 
-:root {
-    font-size: 10px;
-}
 
-body {
-    font: 1.5rem/1.5 "Noto Sans KR", sans-serif;
-    line-height: 1.5;
-}
-
-h2 {
-    font-size: 22px;
-    text-align: center;
-}
-
-body {
-    margin: 0;
-    background: #fff;
-}
-
-h1 {
-    font-size: 28px;
-    font-weight: 700px;
-}
-/* 공통 */
 
 
 /* 전체 크기 */
@@ -81,22 +94,6 @@ h1 {
 }
 
 /* 매장찾기, 전화상담문의 */
-#sec1{
-
-    width: 608px;
-    height: 249px;
-    background-color: #009132;
-    padding: 24px;
-    margin: 23px;
-}
-#sec2{
-    display:flex;
-    width: 608px;
-    height: 249px;
-    background-color: #009132;
-    padding: 24px;
-    margin: 23px;
-}
 
 
 
@@ -112,49 +109,7 @@ img{
 }
 
 
-/* 글자 */
-span{
-    font-size: 22px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
-.green {
-    
-    width: 608px;
-    height: 249px;
-    background-color: #009132;
-    padding: 24px;
-    
-}
-.puple{
-    display:flex;
-    width: 608px;
-    height: 249px;
-    background-color: #009132;
-    padding: 24px;
-    margin: 23px;
-}
-.call.p{
-    font-size: 2.2rem;
-}
-.call,.choose {
-    background-color: #fff;
-    width: 602px;
-    height: 190px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-.call img{
-    width: 140px;
-    height: 108px;
-}
-.call span{
-    justify-content: center;
-text-align: center;
-}
 
 
 
